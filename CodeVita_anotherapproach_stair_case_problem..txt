@@ -1,0 +1,17 @@
+# Codevita staircase problem.
+# If he either takes 1 step or 2 steps at a time.
+
+list1 = []
+
+n = int(input("Enter the number of steps:"))
+
+a = 0
+b = 1
+
+for i in range(0, n+1):
+    list1.append(b)
+    c = a + b
+    a = b
+    b = c
+
+print(max(list1))

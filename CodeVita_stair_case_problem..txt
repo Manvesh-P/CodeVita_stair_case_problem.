@@ -1,0 +1,15 @@
+# Staircase problem.
+
+def ways(n):
+    if n == 0:
+        return 1
+    elif n == 1:
+        return 1
+    elif n == 2:
+        return 2
+    else:
+        return ways(n-1) + ways(n-2)
+
+n = int(input("Enter the number of steps:"))
+
+ways(n)
